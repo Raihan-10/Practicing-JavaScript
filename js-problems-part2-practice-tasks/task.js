@@ -12,9 +12,9 @@ function lowestNumber(numbers){
     return min;
 }
 
-const heights2 = [167, 190, 120, 165, 137];
-const minNumber = lowestNumber(heights2);
-console.log(minNumber);
+// const heights2 = [167, 190, 120, 165, 137];
+// const minNumber = lowestNumber(heights2);
+// console.log(minNumber);
 
 /*Task -2: 
 Find the friend with the smallest name.
@@ -30,8 +30,8 @@ function smallestName(names){
     return small;
 }
 
-const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
-console.log(smallestName(heights2));
+// const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+// console.log(smallestName(heights2));
 
 /**
  * Task-3: 
@@ -58,7 +58,7 @@ function totalBudget(laptopQuantity,tabletQuantity, mobileQuantity){
 }
 
 const budget = totalBudget(1,1,1);
-console.log(budget);
+// console.log(budget);
 /**
  * Task-4: 
 
@@ -96,7 +96,7 @@ const phones = [
             { model: "PhoneF", brand: "HTC", price: 48000 },
         ];
 
-console.log(findAveragePhonePrice(phones));
+// console.log(findAveragePhonePrice(phones));
 /**
  * Task -5: (Hard)
 For each employee their current salary is calculated by multiplying yearly increment with experience then adding the result to the starting salary. Now calculate is the total salary has to be provided by the company in a month.
@@ -112,10 +112,12 @@ For each employee their current salary is calculated by multiplying yearly incre
 function totalSalary(employees){
     let sum = 0;
     for(const salary of employees){
+        
         let total = salary.starting+(salary.experience*salary.increment);
         sum+=total;
     }
-    return sum;
+    let monthlySalary = sum/12;
+    return monthlySalary;
 }
 
 
